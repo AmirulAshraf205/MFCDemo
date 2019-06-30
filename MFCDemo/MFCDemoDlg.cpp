@@ -28,6 +28,7 @@ void CMFCDemoDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
 	DDX_Control(pDX, IDC_BUTTON_1, m_btnHardWrite);
+	DDX_Control(pDX, IDC_BUTTON_2, m_btnDelete);
 	DDX_Text(pDX, IDC_STATIC_1, m_sWriting);
 	DDX_Control(pDX, IDC_STATIC_1, m_sttWriting);
 }
@@ -36,6 +37,7 @@ BEGIN_MESSAGE_MAP(CMFCDemoDlg, CDialogEx)
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
 	ON_BN_CLICKED(IDC_BUTTON_1, OnBnClickedHardWrite)
+	ON_BN_CLICKED(IDC_BUTTON_2, OnBnClickedDelete)
 END_MESSAGE_MAP()
 
 
@@ -98,9 +100,9 @@ void CMFCDemoDlg::OnBnClickedHardWrite(void)
 	UpdateData(FALSE);
 }
 
-//void CMFCDemoDlg::OnBnClickedDelete(void)
-//{
-//	UpdateData(TRUE);
-//	m_sWriting = _T("");
-//	UpdateData(FALSE);
-//}
+void CMFCDemoDlg::OnBnClickedDelete(void)
+{
+	UpdateData(TRUE);
+	m_sWriting = _T("Deleted!");
+	UpdateData(FALSE);
+}

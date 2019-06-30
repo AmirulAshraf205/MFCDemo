@@ -31,6 +31,7 @@ protected:
 
 public:
 	CButton m_btnHardWrite;
+	CButton m_btnDelete;
 	CStatic m_sttWriting;
 	CString m_sWriting;
 
