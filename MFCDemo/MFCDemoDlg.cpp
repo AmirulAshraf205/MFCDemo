@@ -112,6 +112,6 @@ void CMFCDemoDlg::OnBnClickedDelete(void)
 void CMFCDemoDlg::OnBnClickedRemoveText(void)
 {
 	UpdateData(TRUE);
-	m_sWriting = _T("");
+	m_sWriting = _T("12345");
 	UpdateData(FALSE);
 }
