@@ -32,9 +32,11 @@ protected:
 public:
 	CButton m_btnHardWrite;
 	CButton m_btnDelete;
+	CButton m_btnRemoveText;
 	CStatic m_sttWriting;
 	CString m_sWriting;
 
 	afx_msg void OnBnClickedHardWrite(void);
 	afx_msg void OnBnClickedDelete(void);
+	afx_msg void OnBnClickedRemoveText(void);
 };
