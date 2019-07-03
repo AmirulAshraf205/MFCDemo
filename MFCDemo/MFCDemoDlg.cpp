@@ -112,6 +112,7 @@ void CMFCDemoDlg::OnBnClickedDelete(void)
 void CMFCDemoDlg::OnBnClickedRemoveText(void)
 {
 	UpdateData(TRUE);
+	//m_sWriting = _T("12");
 	m_sWriting = _T("34");
 	UpdateData(FALSE);
 }
